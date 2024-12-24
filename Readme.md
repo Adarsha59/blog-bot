@@ -120,10 +120,6 @@ You can manually test the `/api/post` route using tools like Postman or your bro
 
 The cron job will automatically hit the `/api/post` route every 2 minutes, so you can monitor your blog for new posts.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgements
 
 - **Gemine API**: For providing powerful content generation capabilities.
