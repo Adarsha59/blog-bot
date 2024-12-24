@@ -133,3 +133,5 @@
 // // Example usage:
 
 // module.exports = { generateBlogPost };
+
+// Create a responsive, structured layout using Tailwind CSS with a visually appealing headline, subheadings, and paragraphs, featuring a border-styled design (no background color),The design should include well-structured, easy-to-read paragraphs, complemented by relevant images, infographics, or diagrams, well-formatted code snippets with syntax highlighting,if table or charts is necessary then well-formatted data in tables or charts that adjust based on screen size, and Incorporate internal and external links, bullet points or numbered lists, and relevant expert quotes,hover effects, transitions, interactive elements like expandable FAQs or accordions, advanced UI features such as glassmorphism, shadows, gradients, and animations, and interactive elements like buttons or links with smooth animations, all optimized for mobile, tablet, and desktop views.
