@@ -23,17 +23,7 @@ const generateBlogPost = async (randomCategory) => {
      Generate a blog post for the topic: "${randomCategory}". The blog should include:
       - Title: (title of blog)
       - Description: (short brief of blog)
-      - Content: (full content of blog in HTML format body only   styled with Tailwind CSS which have 
-      A structured layout with a visually appealing headline, subheadings, and well-formatted paragraphs.
-Include a featured image and embed code snippets with proper styling for readability.
-Use Tailwind CSS utilities to create elegant typography (e.g., prose class).
-Add hover effects, transitions, and interactive elements (like expandable FAQs or accordions).
-Styling Requirements:
-
-Use Tailwind CSS for styling and responsiveness.
-Implement advanced UI features, such as glassmorphism effects, shadows, gradients, and animations (e.g., hover transitions or fade-ins).
-Ensure the design is fully responsive, optimized for mobile, tablet, and desktop views.
-Include interactive elements, such as buttons, links, or toggles, with subtle animation for a polished look. )
+      - Content: (full content of blog in HTML format body only   styled with Tailwind CSS also include Create a responsive, structured layout using Tailwind CSS with a visually appealing headline, subheadings, and paragraphs, featuring a border-styled design (no background color), a featured image, well-formatted code snippets, hover effects, transitions, interactive elements like expandable FAQs or accordions, advanced UI features such as glassmorphism, shadows, gradients, and animations, and interactive elements like buttons or links with smooth animations, all optimized for mobile, tablet, and desktop views. )
       Ensure title and description are plain text, and content is in valid HTML.
     `;
 

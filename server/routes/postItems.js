@@ -1,6 +1,7 @@
 const { default: axios } = require("axios");
 const express = require("express");
 const { generateBlogPost } = require("../utils/generateContent");
+const { fetchImage } = require("../utils/imageFetch");
 const router = express.Router();
 const categories = [
   "Programming",
@@ -37,11 +38,12 @@ const categories = [
 ];
 const randomCategory =
   categories[Math.floor(Math.random() * categories.length)];
+
 router.get("/", async (req, res) => {
   try {
     // Generate blog post data
     console.log("tag0", randomCategory);
-
+    const image = await fetchImage(randomCategory);
     const data = await generateBlogPost(randomCategory);
     console.log("title", data.title);
     // Validate generated data
@@ -59,9 +61,10 @@ router.get("/", async (req, res) => {
       content: data.content,
       author: "Adarsha Paudyal",
       status: "published",
-      image: "https://example.com/your-image.jpg", // Replace with a valid image URL
+      image: image, // Replace with a valid image URL
       tags: [randomCategory], // Ensure this matches the API's expected format
-      author_image: "https://example.com/author-image.jpg", // Replace with a valid author image URL
+      author_image:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVluajhaTFhZelo2RmxxZE1qYUlQbTZVQWoifQ", // Replace with a valid author image URL
     };
 
     // Post blog data to the blog API
@@ -74,6 +77,7 @@ router.get("/", async (req, res) => {
     res.status(200).json({
       message: "Blog post created successfully",
       data: response.data,
+      hami: blogData,
     });
   } catch (error) {
     // Log the error and send a response
