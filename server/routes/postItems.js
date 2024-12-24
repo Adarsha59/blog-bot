@@ -1,4 +1,3 @@
-const { default: axios } = require("axios");
 const express = require("express");
 const { generateBlogPost } = require("../utils/generateContent");
 const { fetchImage } = require("../utils/imageFetch");
