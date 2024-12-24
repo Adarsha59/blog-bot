@@ -20,7 +20,7 @@ router.get("/", async (req, res) => {
     //     image}
     // Return the generated blog post
     res.json(data);
-    console.log("object returned", data);
+    // console.log("object returned", data);
     // res.json(items);
   } catch (error) {
     console.error("Error fetching items:", error.message);

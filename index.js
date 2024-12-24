@@ -7,10 +7,10 @@ app.use(express.json());
 
 // Import routes
 const getItems = require("./server/routes/getItems");
-
+const postItems = require("./server/routes/postItems");
 // Mount routes
 app.use("/api/items", getItems);
-
+app.use("/api/post", postItems);
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port http://localhost:${port}`);
