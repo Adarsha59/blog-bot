@@ -12,6 +12,9 @@ const { default: axios } = require("axios");
 // Mount routes
 app.use("/api/items", getItems);
 app.use("/api/post", postItems);
+app.get("/", (req, res) => {
+  res.status(200).send("Success");
+});
 const url = process.env.MYURL;
 cron.schedule("*/1 * * * *", async () => {
   try {
