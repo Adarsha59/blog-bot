@@ -12,7 +12,7 @@ let items = [
 router.get("/", async (req, res) => {
   try {
     // const items = await axios.get("https://hamroblog.vercel.app/api/blog/read");
-    const data = await generateBlogPost();
+    const data = await generateBlogPost(human);
     //  const {
     //     description,
     //     category,
